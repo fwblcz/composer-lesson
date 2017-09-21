@@ -1,0 +1,28 @@
+1、    //使用composer require mustache/mustache命令安装
+和直接写 "mustache/mustache":"^2.7.0" 后composer install 是一样的
+
+2、    "mustache/mustache":"^2.7.0"//飘号~2.7.0 是下载2.7.0的版本
+^2.7.0是下载最低版本是2.7.0的，如果最新版本是2.12.0 则下载2.12.0
+
+3、composer install 会先读取composer.lock中是否存在package指定的版本;
+如果不存在都读取composer.json中指定的版本
+
+4、composer update 会先读取composer.json中是否存在package指定的版本;
+  如果不存在都读取composer.lock中指定的版本;也就是说composer update会重新生成composer.lock文件
+
+5、composer show -i 命令
+   composer show laravel/laravel 在composer中查看包的信息
+6、composer search  laravel 在composer中搜索包
+    或者https://packagist.org/  在 packagist中搜索
+
+
+
+7、http://www.phpcomposer.com  php composer 中文网
+
+8、composer create-project laravel/laravel  使用composer创建项目
+
+
+9、composer.json中为require中的包是线上使用的包
+  require-dev是本地开发需要的包，不需要在线上使用
+
+10、使用composer install  --no-dev 安装的时候忽略require-dev中的package

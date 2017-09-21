@@ -3,4 +3,4 @@
 
 
     $engine=new Mustache_Engine();
-    echo $engine->render('hell {{name}}',['name'=>'fuwenbin']);
+    echo $engine->render('hello {{name}}',['name'=>'fuwenbin']);
